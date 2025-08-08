@@ -60,8 +60,9 @@ const useRegisterForm = () => {
     setError(null);
 
     try {
-      await apiClient.post("/auth/register", formData);
+      const res = await apiClient.post("/auth/register", formData);
       setSuccess(true);
+      localStorage.setItem("token", res.data.token);
       router.push("/dashboard");
     } catch (err: any) {
       setError(
