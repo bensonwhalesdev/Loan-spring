@@ -18,7 +18,6 @@ const Page = () => {
     try {
       const res = await apiClient.get("/user/me");
       const user = res.data.user;
-      console.log(user);
     } catch (error) {
       console.log(error);
     }
