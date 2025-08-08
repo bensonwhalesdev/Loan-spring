@@ -5,6 +5,7 @@ import apiClient from '@/lib/apiClient'
 import Spinner from '@/app/(ReuseableComponents)/spinner'
 import { ArrowLeft } from 'lucide-react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 type User = {
   _id: string
@@ -96,12 +97,12 @@ export default function AllUsersPage() {
                 <td className="py-2 px-4 capitalize">{user.gender}</td>
                 <td className="py-2 px-4">
                   <a href={formatImageSrc(user.licenseFront)} target="_blank" rel="noopener noreferrer">
-                    <img src={formatImageSrc(user.licenseFront)} alt="License Front" className="h-14 w-20 object-cover rounded-md border" />
+                    <Image src={formatImageSrc(user.licenseFront)} alt="License Front" className="h-14 w-20 object-cover rounded-md border" />
                   </a>
                 </td>
                 <td className="py-2 px-4">
                   <a href={formatImageSrc(user.licenseBack)} target="_blank" rel="noopener noreferrer">
-                    <img src={formatImageSrc(user.licenseBack)} alt="License Back" className="h-14 w-20 object-cover rounded-md border" />
+                    <Image src={formatImageSrc(user.licenseBack)} alt="License Back" className="h-14 w-20 object-cover rounded-md border" />
                   </a>
                 </td>
               </tr>
@@ -126,13 +127,13 @@ export default function AllUsersPage() {
               <div>
                 <p className="font-semibold mb-1 text-sm">License Front</p>
                 <a href={formatImageSrc(user.licenseFront)} target="_blank">
-                  <img src={formatImageSrc(user.licenseFront)} alt="Front" className="h-20 w-28 rounded-md border object-cover" />
+                  <Image src={formatImageSrc(user.licenseFront)} alt="Front" className="h-20 w-28 rounded-md border object-cover" />
                 </a>
               </div>
               <div>
                 <p className="font-semibold mb-1 text-sm">License Back</p>
                 <a href={formatImageSrc(user.licenseBack)} target="_blank">
-                  <img src={formatImageSrc(user.licenseBack)} alt="Back" className="h-20 w-28 rounded-md border object-cover" />
+                  <Image src={formatImageSrc(user.licenseBack)} alt="Back" className="h-20 w-28 rounded-md border object-cover" />
                 </a>
               </div>
             </div>
