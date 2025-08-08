@@ -19,7 +19,7 @@ export default function LandingHeader() {
            <Link href={"/register"}>Apply Now</Link>
           </button>
           <button className="border border-white text-white px-6 py-3 rounded-xl hover:bg-white hover:text-[#0A4860] transition duration-300 cursor-pointer">
-            Learn More
+           <Link href={'/learn-more'}> Learn More</Link>
           </button>
         </div>
       </div>

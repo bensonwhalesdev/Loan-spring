@@ -16,7 +16,7 @@ export default function TabsSection() {
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`text-lg font-semibold px-5 py-2 rounded-xl border transition-all duration-300 cursor-pointer ${
+              className={`font-semibold px-5 py-2 rounded-xl border transition-all duration-300 cursor-pointer ${
                 activeTab === tab
                   ? 'bg-[#0A4860] text-white border-[#0A4860]'
                   : 'bg-white text-[#0A4860] border-[#ccc] hover:bg-[#e2eef3]'
@@ -56,8 +56,8 @@ export default function TabsSection() {
             </h3>
             <p className="text-gray-600 text-base leading-relaxed">
               {activeTab === 'Personal Loan'
-                ? 'With the ability to choose a loan amount of up to $60,000, LendingClub offers fixed rates and a monthly repayment plan to fit within your budget. We understand the importance of getting the money you need, so we work to have funds disbursed to you quickly upon loan approval.'
-                : 'Put more money back in your pocket by refinancing your car loan with LendingClub. There are no origination fees or prepayment penalties with LendingClub auto loan refinancing, and checking your rate will not impact your credit score.'}
+                ? 'With the ability to choose a loan amount of up to $60,000, LoanSpring offers fixed rates and a monthly repayment plan to fit within your budget. We understand the importance of getting the money you need, so we work to have funds disbursed to you quickly upon loan approval.'
+                : 'Put more money back in your pocket by refinancing your car loan with LoanSpring. There are no origination fees or prepayment penalties with LoanSpring auto loan refinancing, and checking your rate will not impact your credit score.'}
             </p>
           </div>
         </motion.div>

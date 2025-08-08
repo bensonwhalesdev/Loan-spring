@@ -23,7 +23,7 @@ const Footer = () => {
           <h4 className="text-lg font-semibold mb-2">Contact</h4>
           <p className="text-sm text-gray-300">
             support@loanspring.com<br />
-            +1 (800) 123-4567<br />
+            {/* +1 (800) 123-4567<br /> */}
             Mon - Fri: 9am - 5pm
           </p>
         </div>
